@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientTreatments><pat:treatment xmlns:cid="http://www.example.org/schemas/clinic/ClinicIds" xmlns:pat="http://www.example.org/schemas/clinic/Patient" xmlns:prov="http://www.example.org/schemas/clinic/Provider" xmlns:tns="http://www.example.org/schemas/clinic" xmlns:trmt="http://www.example.org/schemas/clinic/Treatment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<trmt:provider-id>201</trmt:provider-id>
+				<trmt:diagnosis>Cancer</trmt:diagnosis>
+				<trmt:radiology>
+					<trmt:date>2001-09-26</trmt:date>
+					<trmt:date>2001-10-26</trmt:date>
+					<trmt:date>2001-11-26</trmt:date>
+					<trmt:date>2001-12-26</trmt:date>
+				</trmt:radiology>
+			</pat:treatment><pat:treatment xmlns:cid="http://www.example.org/schemas/clinic/ClinicIds" xmlns:pat="http://www.example.org/schemas/clinic/Patient" xmlns:prov="http://www.example.org/schemas/clinic/Provider" xmlns:tns="http://www.example.org/schemas/clinic" xmlns:trmt="http://www.example.org/schemas/clinic/Treatment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<trmt:provider-id>202</trmt:provider-id>
+				<trmt:diagnosis>Cancer</trmt:diagnosis>
+				<trmt:surgery>
+					<trmt:date>2001-12-28</trmt:date>
+				</trmt:surgery>
+			</pat:treatment><pat:treatment xmlns:cid="http://www.example.org/schemas/clinic/ClinicIds" xmlns:pat="http://www.example.org/schemas/clinic/Patient" xmlns:prov="http://www.example.org/schemas/clinic/Provider" xmlns:tns="http://www.example.org/schemas/clinic" xmlns:trmt="http://www.example.org/schemas/clinic/Treatment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<trmt:provider-id>201</trmt:provider-id>
+				<trmt:diagnosis>Cancer</trmt:diagnosis>
+				<trmt:drug-treatment>
+					<trmt:name>CancerPillsNO1</trmt:name>
+					<trmt:dosage>1.5</trmt:dosage>
+				</trmt:drug-treatment>
+			</pat:treatment><pat:treatment xmlns:cid="http://www.example.org/schemas/clinic/ClinicIds" xmlns:pat="http://www.example.org/schemas/clinic/Patient" xmlns:prov="http://www.example.org/schemas/clinic/Provider" xmlns:tns="http://www.example.org/schemas/clinic" xmlns:trmt="http://www.example.org/schemas/clinic/Treatment" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<trmt:provider-id>201</trmt:provider-id>
+				<trmt:diagnosis>Cancer</trmt:diagnosis>
+				<trmt:drug-treatment>
+					<trmt:name>CancerPillsNO2</trmt:name>
+					<trmt:dosage>2.0</trmt:dosage>
+				</trmt:drug-treatment>
+			</pat:treatment></PatientTreatments>

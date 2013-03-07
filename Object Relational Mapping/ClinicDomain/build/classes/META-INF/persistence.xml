@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="ClinicDomain">
+	<description>Domain model for a clinical information system</description>
+	<!-- 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
+		<jta-data-source>jdbc/serfdb</jta-data-source>
+		<class>edu.cs548.Patient</class>
+		<class>edu.cs548.Treatment</class>
+		<class>edu.cs548.DrugTreatment</class>
+		<class>edu.cs548.RadiologyTreatment</class>
+		<class>edu.cs548.SurgeryTreatment</class>
+		<class>edu.cs548.Provider</class>
+		<properties>
+	        <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> 
+			<property name="eclipselink.ddl-generation.output-mode" value="both"/> 
+            <property name="eclipselink.target-database" value="PostgreSQL"/>
+            <property name="eclipselink.application-location" value="/Users/charlie/Documents/workspace2/ClinicDomain/scripts"/>
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.example.org/schemas/clinic/ClinicIds"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/schemas/clinic/ClinicIds">
+
+    <simpleType name="PatientIdType">
+    	<restriction base="string"></restriction>
+    </simpleType>
+
+    <simpleType name="ProviderIdType">
+    	<restriction base="string"></restriction>
+    </simpleType>
+</schema>

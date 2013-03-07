@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient-Drugs><patient-id>10001</patient-id><name>Sam</name><dob>1991-01-01</dob><drug-treatments><drug-treatment><diagnosis>Cancer</diagnosis><name>CancerPillsNO1</name><dosage>1.5</dosage></drug-treatment><drug-treatment><diagnosis>Cancer</diagnosis><name>CancerPillsNO2</name><dosage>2.0</dosage></drug-treatment></drug-treatments></Patient-Drugs>
