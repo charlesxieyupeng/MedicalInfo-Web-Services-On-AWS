@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Clinic xmlns:cid="http://www.example.org/schemas/clinic/ClinicIds"
+	xmlns:pat="http://www.example.org/schemas/clinic/Patient" xmlns:prov="http://www.example.org/schemas/clinic/Provider"
+	xmlns:tns="http://www.example.org/schemas/clinic" xmlns:trmt="http://www.example.org/schemas/clinic/Treatment"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/schemas/clinic Clinic.xsd ">
+	<pat:Patient>
+		<pat:patient-id>10001</pat:patient-id>
+		<pat:name>Sam</pat:name>
+		<pat:dob>1991-01-01</pat:dob>
+		<pat:treatments>
+			<pat:treatment>
+				<trmt:provider-id>201</trmt:provider-id>
+				<trmt:diagnosis>Cancer</trmt:diagnosis>
+				<trmt:radiology>
+					<trmt:date>2001-09-26</trmt:date>
+					<trmt:date>2001-10-26</trmt:date>
+					<trmt:date>2001-11-26</trmt:date>
+					<trmt:date>2001-12-26</trmt:date>
+				</trmt:radiology>
+			</pat:treatment>
+			<pat:treatment>
+				<trmt:provider-id>202</trmt:provider-id>
+				<trmt:diagnosis>Cancer</trmt:diagnosis>
+				<trmt:surgery>
+					<trmt:date>2001-12-28</trmt:date>
+				</trmt:surgery>
+			</pat:treatment>
+		</pat:treatments>
+	</pat:Patient>
+	<pat:Patient>
+		<pat:patient-id>10002</pat:patient-id>
+		<pat:name>Bob</pat:name>
+		<pat:dob>1970-01-01</pat:dob>
+		<pat:treatments>
+			<pat:treatment>
+				<trmt:provider-id>201</trmt:provider-id>
+				<trmt:diagnosis>HIV</trmt:diagnosis>
+				<trmt:drug-treatment>
+					<trmt:name>B</trmt:name>
+					<trmt:dosage>1.5</trmt:dosage>
+				</trmt:drug-treatment>
+			</pat:treatment>
+		</pat:treatments>
+	</pat:Patient>
+
+	<prov:Provider>
+		<prov:provider-id>201</prov:provider-id>
+		<prov:name>Frank</prov:name>
+		<prov:spec>Radiology</prov:spec>
+	</prov:Provider>
+	<prov:Provider>
+		<prov:provider-id>202</prov:provider-id>
+		<prov:name>Tom</prov:name>
+		<prov:spec>Surgery</prov:spec>
+	</prov:Provider>
+	<prov:Provider>
+		<prov:provider-id>203</prov:provider-id>
+		<prov:name>Bush</prov:name>
+		<prov:spec>Oncology</prov:spec>
+	</prov:Provider>
+</tns:Clinic>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://cs548.stevens.edu/clinic/service/dto/treatment"
+	jaxb:version="2.0" 
+	elementFormDefault="unqualified"
+	attributeFormDefault="unqualified" 
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:tns="http://cs548.stevens.edu/clinic/service/dto/treatment">
+	
+	<annotation>
+		<appinfo>
+			<jaxb:globalBindings>
+				<jaxb:javaType
+					name="java.util.Date"
+					xmlType="date"
+					parseMethod="edu.stevens.cs548.clinic.service.dto.DateAdapter.parseDate"
+					printMethod="edu.stevens.cs548.clinic.service.dto.DateAdapter.printDate"
+				/>
+			</jaxb:globalBindings>
+		</appinfo>
+	</annotation>
+	
+	<!-- <complexType name="TreatmentType"> <sequence> <element name="provider-id" 
+		type="string"></element> <element name="diagnosis" type="string"></element> 
+		<choice> <element name="drug-treatment" type="tns:DrugTreatmentType"></element> 
+		<element name="radiology" type="tns:RadiologyType"></element> <element name="surgery" 
+		type="tns:SurgeryType"></element> </choice> </sequence> </complexType> -->
+	<element name="treatment-dto">
+		<complexType>
+			<sequence>
+				<element name="provider-id" type="string"></element>
+				<element name="diagnosis" type="string"></element>
+				<choice>
+					<element name="drug-treatment" type="tns:DrugTreatmentType"></element>
+					<element name="radiology" type="tns:RadiologyType"></element>
+					<element name="surgery" type="tns:SurgeryType"></element>
+				</choice>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="DrugTreatmentType">
+		<sequence>
+			<element name="name" type="string"></element>
+			<element name="dosage" type="float"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="RadiologyType">
+		<sequence>
+			<element name="date" type="date" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="SurgeryType">
+		<sequence>
+			<element name="date" type="date"></element>
+		</sequence>
+	</complexType>
+
+</schema>

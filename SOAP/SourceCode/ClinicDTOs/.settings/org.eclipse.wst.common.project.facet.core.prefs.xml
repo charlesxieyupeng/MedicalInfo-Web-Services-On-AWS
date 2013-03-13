@@ -1,0 +1,21 @@
+<root>
+  <facet id="jpt.jaxb">
+    <node name="libprov">
+      <attribute name="provider-id" value="jaxb-jre-library-provider"/>
+    </node>
+    <node name="platform">
+      <attribute name="platform-id" value="generic_2_1"/>
+    </node>
+    <node name="schemas">
+      <node name="schema-1">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/META-INF/PatientDTO.xsd"/>
+      </node>
+      <node name="schema-2">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/META-INF/TreatmentDTO.xsd"/>
+      </node>
+      <node name="schema-3">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/META-INF/ProviderDTO.xsd"/>
+      </node>
+    </node>
+  </facet>
+</root>
